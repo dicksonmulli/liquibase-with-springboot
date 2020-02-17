@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="Dickson the developer">
+        <addColumn schemaName="liquibase"
+                   tableName="students">
+            <column name="address" type="varchar(255)" />
+        </addColumn>
+    </changeSet>
+    <changeSet id="2" author="Dickson the developer">
+        <addColumn schemaName="liquibase"
+                   tableName="students">
+            <column name="level" type="varchar(255)" />
+        </addColumn>
+    </changeSet>
+    <changeSet author="dickson-the-developer" id="6">
+        <delete schemaName="liquibase"
+                tableName="students">
+            <where>name='Mutiso'</where>
+        </delete>
+    </changeSet>
+    <changeSet author="dickson-the-developer" id="8">
+        <createTable
+                schemaName="liquibase"
+                tableName="car"
+                tablespace="A String">
+            <column name="number-plate" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+
+
+
+</databaseChangeLog>
