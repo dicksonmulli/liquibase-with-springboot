@@ -20,7 +20,7 @@
     <changeSet author="dickson-the-developer" id="6">
         <delete schemaName="liquibase"
                 tableName="students">
-            <where>name='Mutiso'</where>
+            <where>name='Matthew'</where>
         </delete>
     </changeSet>
     <changeSet author="dickson-the-developer" id="8">
